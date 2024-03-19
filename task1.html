@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Company Team Members</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin : 0;
+                padding: 0;
+                background-image: url(https://i.pinimg.com/736x/81/b6/7c/81b67c01dbf7dde36ac40f7998e4aecb.jpg);
+                background-repeat: no-repeat;
+                background-size: 110% 110%;
+            }
+
+            .wrapper {
+                background-color: black;
+                display: block;
+                color: gold;
+                text-align: center;
+                padding: 2px 20px;
+            }
+
+            .paragraph{
+                color: black;
+                text-align: center;
+            }
+
+            hr {
+                border: none;
+                border-top: 2px dotted gold;
+                width: 700px;
+            }
+
+            .header{
+                color: black;
+                text-align: center;
+            }
+
+            .header .hr{
+                border: none;
+                border-top: 2px solid gold;
+                width: 100px;
+            }
+            .header1{
+                font-family: "Arial",cursive;
+                color: gold;
+                border: 3px solid black;
+                border-radius: 4px;
+                width: 17%;
+                text-align: center;
+                background-color: black;
+            }
+            .wrapper{
+                margin-top: 5%;
+            }
+            .team {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                letter-spacing: 1px;
+                width: auto;
+            }
+            .team .team-member{
+                background-color: white;
+                margin: 5px;
+                margin-bottom: 50px;
+                width: 300px;
+                padding: 20px;
+                position: relative;
+                border-radius: 8px;
+            }
+            .team.team-member h3{
+                color: deeppink;
+                font-size: 20px;
+                margin-top: 50px;
+            }
+            .team.team-member .team_img{
+                height: 100px;
+                border-radius: 50px;
+                position: absolute;
+                top: -50px;
+                left: 50%;
+                transform: translateX(-50px);
+                background-color: white;
+            }
+            .team.team-member .team_img img{
+                width: 100px;
+                height: 100px;
+                padding: 4px;
+                border-radius: 50%;
+            }
+            .header2{
+                font-family: "Arial", cursive;
+                color: gold;
+                border: 3px solid black;
+                border-radius: 4px;
+                width: 17%;
+                text-align: center;
+                background-color: black;
+            }
+            .wrapper2{
+                margin-top: 5%;
+            }
+            .team1 {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                letter-spacing: 1px;
+                width: auto;
+            }
+            .team1.team-member1{
+                background-color: white;
+                margin: 5px;
+                margin-bottom: 50px;
+                width: 300px;
+                padding: 20px;
+                position: relative;
+                border-radius: 8px;
+            }
+            .team1.team-member1 h3{
+                color: deeppink;
+                font-size: 20px;
+                margin-top: 50px;
+            }
+            .team1.team-member1.team_img1{
+                height: 100px;
+                border-radius: 50%;
+                position: absolute;
+                top: -50px;
+                left: 50%;
+                transform: translateX(-50px);
+                background-color: white;
+            }
+            .team1.team-member1 .team_img1 img{
+                width: 100px;
+                height: 100px;
+                padding: 4px;
+                border-radius: 50%;
+            }
+            .team2{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                letter-spacing: 1px;
+                width: auto;
+            }
+            .team2.team-member2{
+                background-color: white;
+                margin: 5px;
+                margin-bottom: 50px;
+                width: 300px;
+                padding: 20px;
+                position: relative;
+                border-radius: 8px;
+            }
+            .team2.team-member2 h3{
+                color: deeppink;
+                font-size: 20px;
+                margin-top: 50px;
+            }
+            .team2 .team2.team-member2.team_img2{
+                height: 100px;
+                border-radius: 50%;
+                position: absolute;
+                top: -50px;
+                left: 50%;
+                transform: translateX(-50px);
+                background-color: white;
+            }
+            .team2.team-member2.team_img2 img{
+                width: 100px;
+                height: 100px;
+                padding: 4px;
+                border-radius: 50%;
+            }
+            .header3{
+                font-family: "Arial",cursive;
+                color: gold;
+                border: 3px solid black;
+                border-radius: 4px;
+                width: 17%;
+                text-align: center;
+                background-color: black;
+            }
+            .wrapper3{
+                margin-top: 5%;
+            }
+            .team3{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                letter-spacing: 1px;
+                width: auto;
+            }
+            .team3.team-member3{
+                background-color: white;
+                margin: 5px;
+                margin-bottom: 50px;
+                width: 300px;
+                padding: 20px;
+                position: relative;
+                border-radius: 8px;
+            }
+            .team3.team-member3 h3{
+                color: deeppink;
+                font-size: 20px;
+                margin-top: 50px;
+            }
+            .team3.team-member3.team_img3{
+                height: 100px;
+                border-radius: 50%;
+                position: absolute;
+                top: -50px;
+                left: 50%;
+                transform: translateX(-50px);
+                background-color: white;
+            }
+            .team3.team-member3.team_img3 img{
+                width: 100px;
+                height: 100px;
+                padding: 4px;
+                border-radius: 50%;
+            }
+            .team4{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                letter-spacing: 1px;
+                width: auto;
+            }
+            .team4.team-member4{
+                background-color: white;
+                margin: 5px;
+                margin-bottom: 50px;
+                width: 300px;
+                padding: 20px;
+                position: relative;
+                border-radius: 8px;
+            }
+            .team4.team-member4 h3{
+                color: deeppink;
+                font-size: 20px;
+                margin-top: 50px;
+            }
+            .team4.team-member4.team_img4{
+                height: 100px;
+                border-radius: 50%;
+                position: absolute;
+                top: -50px;
+                left: 50%;
+                transform: translateX(-50px);
+                background-color: white;
+            }
+            .team.team-member4.team_img4 img{
+                width: 100px;
+                height: 100px;
+                padding: 4px;
+                border-radius: 50%;
+            }
+
+        </style>
+    </head>
+<body>
+    <div class="wrapper">
+        <h1>Company Name</h1>
+    </div>
+    <div class="paragraph">
+        <h3><p>Welcome to (Company Name) , where a dedicated team of professional work together to bring Innovation , Creative and expertise to software Industry. Get to know the indiviual who thrive our company</p></h3>
+    <hr>
+    </hr>
+    <div class="header">
+        <h2>Meet Our Team</h2>
+        <center>
+        <div class="hr">
+        </div>
+        </center>
+    </div>
+    <br>
+    <center>
+    <div class="header1">
+        <h3> Management Team</h3>
+    </div>
+    </center>
+    <br>
+
+    <div class="wrapper1">
+        <div class="team1">
+            <div class = "team-member1">
+                <div class="team_img1">
+                    <img src="https://www.asian-identity.com/wp-content/uploads/2021/04/Nakamura-Katsuhiro-2-1.png" alt="Paul Doe" width="500" height="500">
+                </div>
+                <h3>Paul Doe</h3>
+                <p class = "role">CEO</p>
+            </div>
+
+            <div class="team-member1">
+                <div class="team_img1">
+                    <img src ="https://www.asian-identity.com/wp-content/uploads/2021/04/Thiranart-Napapruekchart.png" alt = "Thiranart Napapruekchart" width="500" height="500">
+                </div>
+                <h3>Thiranart Napapruekchart</h3>
+                <p class="role">VP Development</p>
+            </div>
+            <div class="team-member1">
+                <div class="team_img1">
+                    <img src="https://www.asian-identity.com/wp-content/uploads/2023/07/lunako5-1.png" alt="Lunako Kuroda" width="500" height="500">
+                </div>
+                <h3>Lunako Kuroda</h3>
+                <p class="role">Finance & Operation </p>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <center>
+        <div class="header2">
+            <h3>Development Team</h3>
+        </div>
+    </center>
+    <br>
+
+    <div class="wrapper2">
+        <div class="team1">
+            <div class="team-member1">
+                <div class="team_img1">
+                    <img src="https://www.asian-identity.com/wp-content/uploads/2023/09/patty2.png" width="500" height="500">
+                </div>
+                <h3> Kanokwan Prasertsri</h3>
+                <p class="role">Team Lead</p>
+        </div>
+
+        <div class="team-member1">
+            <div class="team_img1">
+                <img src="https://www.asian-identity.com/wp-content/uploads/2022/11/Horiguchi-Kanako-4-1.png" alt=" Kanako Horiguchi" width="500" height="500">
+            </div>
+            <h3>Kanako Horiguchi</h3>
+            <p class="role">Software Engineer</p>
+        </div>
+        <br>
+        <br>
+        <div class="team2">
+            <div class="team-member2">
+                <div class="team_img2">
+                    <img src="https://media.licdn.com/dms/image/C5603AQGPlAiiKjOg_A/profile-displayphoto-shrink_800_800/0/1573467052984?e=2147483647&v=beta&t=UYIbGa5X_Hl8URDQqpnkVCtkFVoy26nAHRVThFfIBG0" alt="Tippayarat Ekman" width="500" height="500">
+                </div>
+                <h3>Tippayarat Ekman</h3>
+                <p class="role">Software Engineer</p>
+            </div>
+
+            <div class="team-member2">
+                <div class="team_img2">
+                    <img src = "https://i1.rgstatic.net/ii/profile.image/751909338116097-1556280564152_Q512/Rumi-Nakamura.jpg" alt="Rumi Nishida" width="500" height="500">
+                </div>
+                <h3>Rumi Nishida</h3>
+                <p class="role">Software Engineer</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <center>
+        <div class="header3">
+            <h3>Sales & Marketing </h3>
+        </div>
+    </center>
+    <br>
+    <br>
+    <br>
+
+    <div class="wrapper3">
+        <div class="team3">
+            <div class="team-member3">
+                <div class="team_img3">
+                    <img src="https://www.asian-identity.com/wp-content/uploads/2020/07/team-img-consultant-11.jpg" alt="Toshimitsu Sowa" width="500" height="500">
+                </div>
+                <h3>Toshimitsu Sowa</h3>
+                <p class="role">Sales officer</p>
+            </div>
+
+            <div class="team-member3">
+                <div class="team_img3">
+                    <img src="https://www.asian-identity.com/wp-content/uploads/2020/07/team-img-consultant-10.jpg" alt="Ph.D. Kritinee Pongtanalert" width="500" height="500">
+                </div>
+                <h3>Ph.D. Kritinee Pongtanalert</h3>
+                <p class="role">Sales officer</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
